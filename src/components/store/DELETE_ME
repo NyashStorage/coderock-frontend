@@ -1,0 +1,3 @@
+В этом пакете будем хранить связанные с Redux сторы, например:
+./auth/auth.api.ts
+./auth/auth.slice.ts
