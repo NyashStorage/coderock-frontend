@@ -1,5 +1,6 @@
 import type { JSX } from 'react';
+import { Typography } from '@mui/material';
 
 export default function App(): JSX.Element {
-  return <>Application</>;
+  return <Typography variant="h1">Application</Typography>;
 }
