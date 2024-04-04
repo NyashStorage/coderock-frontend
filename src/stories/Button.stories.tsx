@@ -17,3 +17,19 @@ Primary.args = {
   color: 'primary',
   variant: 'contained',
 };
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  color: 'secondary',
+  variant: 'contained',
+};
+
+// TODO: Вынести как отдельный компонент.
+export const SecondaryLight = Template.bind({});
+SecondaryLight.args = {
+  sx: {
+    color: 'primary.main',
+    bgcolor: 'secondary.light',
+  },
+  variant: 'contained',
+};
