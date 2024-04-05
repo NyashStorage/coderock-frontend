@@ -40,6 +40,28 @@ const baseTheme: ThemeOptions = {
   typography: {
     fontFamily: '"Inter", sans-serif',
   },
+  components: {
+    MuiInputBase: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          color: `${theme.palette.secondary.main} !important`,
+          borderRadius: '20px !important',
+
+          '&:hover .MuiOutlinedInput-notchedOutline': {
+            borderColor: `${theme.palette.secondary.main} !important`,
+            borderWidth: '2px !important',
+          },
+        }),
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        notchedOutline: ({ theme }) => ({
+          borderColor: theme.palette.secondary.main,
+        }),
+      },
+    },
+  },
 };
 
 export default createTheme(baseTheme);
